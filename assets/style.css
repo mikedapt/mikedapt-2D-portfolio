@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-image: url("bg.png");
+  background-color: #263324;
+  color: white;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 900px) {h1{font-size:24px}}
+@media only screen and (max-width: 600px) {h1{font-size:16px}}
+
+h2 {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {h2{font-size:16px}}
+
+h5 {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {h5{font-size:12px}}
+
+p {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1600px) {p{font-size:12px}}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 700px) {.accordion{font-size:12px;padding: 9px;}}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after, .accordion {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #4A4A4A;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/*@media only screen and (max-width: 600px) {button{font-size:12px}}*/
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 24px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {.tab button{font-size:16px}}
+
+@media only screen and (max-width: 700px) {.tab button{font-size:12px;padding: 7px 8px;}}
+
+@media only screen and (max-width: 600px) {.tab button{font-size:9px;padding: 7px 8px;}}
+
+@media only screen and (max-width: 500px) {.tab button{font-size:8px;padding: 7px 8px;}}
+
+@media only screen and (max-width: 400px) {.tab button{font-size:6px;padding: 7px 8px;}}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+
+/* Header/Blog Title */
+.header {
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.profile {
+  width: 100%;
+  padding: 20px;	
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #606060;
+   margin-top: 20px;
+   padding-top: 10px;
+   padding-bottom: 5px;
+}
+
+.logo_obj {
+  position:absolute;
+  display:inline-grid;
+  width:75px;
+  height:75px;
+}
+
+@media only screen and (max-width: 900px) {.logo_obj{width:60px;height:60px;}}
+
+@media only screen and (max-width: 600px) {.logo_obj{width:40px;height:40px;}}
+
+.contacthdr {
+  display:inline-grid;
+  margin-left:70px;
+}
+
+@media only screen and (max-width: 600px) {.contacthdr{margin-left:50px;}}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 32px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-envelope {
+  background: #a4c639;
+  color: white;
+  margin-left:10px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin-left:10px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  margin-left:10px;
+}
+
+.photoskillbar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+  overflow-x:hidden;
+  overflow: hidden;
+  border-radius: 5px;
+  animation-name: photobar;
+  animation-duration: 3s;
+}
+
+@keyframes photobar {
+  0%   {width: 0%;}
+  100% {width: 100%;}
+}
+
+.htmlskillbar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+  overflow-x:hidden;
+  overflow: hidden;
+  border-radius: 5px;
+  animation-name: htmlbar;
+  animation-duration: 3s;
+}
+
+@keyframes htmlbar {
+  0%   {width: 0%;}
+  100% {width: 100%;}
+}
+
+.pythonskillbar {
+  width: 95%;
+  height: 30px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+  overflow-x:hidden;
+  overflow: hidden;
+  border-radius: 5px;
+  animation-name: pythonbar;
+  animation-duration: 4s;
+}
+
+@keyframes pythonbar {
+  0%   {width: 0%;}
+  100% {width: 95%;}
+}
+
+.blenderskillbar {
+  width: 80%;
+  height: 30px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+  overflow-x:hidden;
+  overflow: hidden;
+  border-radius: 5px;
+  animation-name: blenderbar;
+  animation-duration: 5s;
+}
+
+@keyframes blenderbar {
+  0%   {width: 0%;}
+  100% {width: 80%;}
+}
+
+.javascriptskillbar {
+  width: 75%;
+  height: 30px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+  overflow-x:hidden;
+  overflow: hidden;
+  border-radius: 5px;
+  animation-name: javascriptbar;
+  animation-duration: 5s;
+}
+
+@keyframes javascriptbar {
+  0%   {width: 0%;}
+  100% {width: 75%;}
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+
+/*Silde Show */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
