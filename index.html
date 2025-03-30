@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="assets/mikedapt_logo_modern_grayscale.svg" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<title>Mikedaptable</title>
+</head>
+<body style ="background-image: url('assets/bg.png');background-size: 100% 100%;">
+
+<div class="header">
+  <img id="Banner" src="assets/mikedapt_banner_text.jpg" width = "100%" height = "100%">
+</div>
+
+<div class="tab">
+  <button id="defaultOpen" class="tablinks" onclick="openNav(event, 'Work Experience')">Work Experience</button>
+  <button class="tablinks" onclick="openNav(event, 'Projects')">Projects</button>
+  <button class="tablinks" onclick="openNav(event, 'Proficiencies')">Proficiencies</button>
+  <button class="tablinks" onclick="openNav(event, 'Contact')">Contact</button>
+  <button class="tablinks" onclick="openNav(event, 'More')">More</button>
+</div>
+
+<div class="row">
+
+  <div class="leftcolumn">
+   <div id="Work Experience" class="tabcontent">
+    <div class="card">
+      <h2>Lone Star Circuits | Creative Director, IT Department</h2>
+      <h5>July 29th 2021 – Present</h5>
+      <img src="assets/lsc_building.JPG" style="width:100%;height:100%;">
+      <p>-Created and Managed the Design, Data, and Forms of the Company Website</p>
+	  <p>-Improved our SEO score to be the first result using Google Search</p>
+      <p>-Established A Google Business Page and Industrynet Page</p>
+	  <p>-Developed a web browser application on a local server that does MRP and ERP functionality</p>
+    </div>
+    <div class="card">
+      <h2>Medix Infusion | Web Developer</h2>
+      <h5>December 2020 –January 2021</h5>
+      <img src="assets/medixinfusion.jpg" style="width:100%;height:100%;image-rendering: auto;">
+	  <p>-Redesigned the Front End of the Pages on the Website</p>
+      <p>-Adjusted/Created Visual Assets using Affinity Photo for the Site</p>
+	  <p>-Accommodated Margins with Elementor for both a web and mobile view  </p>
+    </div>
+	<div class="card">
+      <h2>Preston Road Church of Christ | Freelancer</h2>
+      <h5>June 2020 – Present</h5>
+      <img src="assets/prcc_auditorium.jpg" style="width:100%;height:100%;">
+	  <p>-Created several graphics and presentations for Services and Announcements</p>
+      <p>-Modified various video clips for brief exhibition toward events or the Speaker's message</p>
+	  <p>-Produced and Developed the PRCC Virtual Choir during Covid, syncing audio and video for multiple Individuals and Parts</p>
+    </div>
+   </div>
+   
+   <div id="Projects" class="tabcontent">
+    <div class="card">
+      <h2>Current Projects</h2>
+	  
+	  <button class="accordion" type="button">3D Portfolio | Three.js</button>
+      <div class="panel">
+	       <img src="assets/threejs_preview.png" style="width:80%;height:80%;">
+		   <div style = "background-color:#595959;">
+           <p>My Long Term Project going forward from this current site design is to make a 3D Portfolio using Three.js.</p> 
+		   <p>At this time my effort has been on work and this current Portfolio, but I intend to create a more interactive and unique</p> 
+		   <p>Project for my website!</p>
+		   </div>
+      </div>
+
+      <button class="accordion" type="button"> Cloud Hosted Email Server | Vultr, Cyber Panel</button>
+      <div class="panel">
+	       <img src="assets/vultr_preview.JPG" style="width:80%;height:80%;">
+           <div style = "background-color:#595959;">
+           <p>Using Vultr Cloud Hosting on a small Ubuntu server and CyberPanel, an open source software for websites and mail servers,</p> 
+		   <p>I am creating a mail server for my domain name, mikedaptable. At this time I have created the server and installed the software.</p> 
+		   <p>Currently, emails can be created with the domain name and Imap/Pop3 capabilities work, the only issue is getting my emails out of</p>
+		   <p>the spam box, which I shall try an smtp relay to do that. Once the project is complete, I shall update this site and move it</p>
+		   <p>to Past Projects, but otherwise I will try to keep my progress up to date here.</p>
+		   </div>
+	  </div>
+
+      
+	  
+    </div>
+    <div class="card">
+      <h2>Past Projects</h2>
+	  
+	  <h3>February 22nd, 2023</h3>
+	  <button class="accordion"> Checkers Board | Three.js, Blender</button>
+      <div class="panel">
+	       <video style="width:80%;height:80%;" autoplay loop muted>
+              <source src="assets/checkers_preview.mp4" type="video/mp4">
+           </video>
+           <p>Using Basic Geometry for the board and Blender for the Pieces, This Project was made as a proof of concept for using</p> 
+		   <p>Raycasting to allow for interaction with objects in the 3d Enviornment. In the video, hovering over the pieces turns it</p> 
+		   <p>to a different color/glow and clicking presents the message that the object was clicked, allowing us to replace it with</p>
+		   <p>any script that is needed.</p>
+	  </div>
+	  
+	  <h3>August 4th, 2022</h3>
+	  <button class="accordion"> Python Webhooks | Python, Flask, JSON</button>
+      <div class="panel">
+	       <img src="assets/webhook_preview.JPG" style="width:80%;height:80%;">
+           <p>To Send webhooks, I created a small python script that sends a webhook to the url I had specified. To verify I had received it, I made a small separate</p> 
+		   <p>python script that creates a blank flask server which will from the command line show me that I had gotten the json content or not. This was a small project</p>
+           <p>to troubleshoot issues with receiving webhooks.</p>    
+	  </div>
+	  
+	  <h3>June 4th, 2022</h3>
+	  <button class="accordion"> E-App-Builder | Python, Tkinter</button>
+      <div class="panel">
+	       <img src="assets/e-app_preview.png" style="width:40%;height:40%;">
+           <p>To turn the data from the Website's online employment form to pdfs, I created a pdf generator script called e-app (electronic application).</p> 
+		   <p>Running the file would open a GUI with a dropdown to choose a folder you added with the exported data and then pressing the button would generate the pdfs.</p> 
+	  </div>
+	  
+	  <h3>October 12th, 2021</h3>
+	  <button class="accordion"> XML Parser | Python</button>
+      <div class="panel">
+	       <img src="assets/xml_preview.JPG" style="width:80%;height:80%;">
+           <p>Using treelib, I created a python script that would use recursion to grab all the xml data into lists then added exceptions to clean the values that were empty or null.</p> 
+		   <p>This was useful in recreating the xml to another location or transferring the data into some other format to use.</p> 
+	  </div>
+	  
+	  <h3>September 8th, 2021</h3>
+	  <button class="accordion"> LSC Website | Wix </button>
+      <div class="panel">
+	       <img src="assets/lscsite_preview.JPG" style="width:80%;height:80%;">
+           <p>After about five re mediations, the website was published from my first two months working there. Overtime, I have added changes when applicable, some of which being</p> 
+		   <p>Company news updates on News You Can Use, an online employment form, and additional showcases of products that can be displayed. Many of the visuals for the site were either</p> 
+		   <p>provided or taken/edited by myself. I also managed to get our site to the top of google along with the creation of a google business page when searching "lone star circuits"</p>
+	  </div>
+	  
+	  <h3>June 6th, 2020</h3>
+	  <button class="accordion"> PRCC Virtual Choir | DaVinci Resolve </button>
+      <div class="panel">
+	       <video style="width:80%;height:80%;" autoplay loop muted>
+              <source src="assets/prccvirtualchoir_preview.mp4" type="video/mp4">
+           </video>
+           <p>For this Project I aligned and edited multiple videos to start at the same point. With the audio there was some variety</p> 
+		   <p>So I added reverb to the audio portion of the project to attempt to sync all the singers together for the song.</p> 
+		   <p>While I was able to make adjustments to audio in the video editor, I should have used audacity and synced audio there first.</p>
+		   <p>I have used audacity for past Projects/Assignments and its use on creating an audio file would have resulted with less reverb or none</p>
+	  </div>
+	  
+	  <h3>October 23rd, 2019</h3>
+	  <button class="accordion"> Echo Audio | Android Studio, Google Play </button>
+      <div class="panel">
+	       <img src="assets/echoaudio_preview.PNG" style="width:80%;height:80%;">
+           <p>Published on the Google Play store, this is a free app that is used for recording audio.</p> 
+		   <p>During the time, I intended it to be a audio app that does not store the audio but is present to replay with the app still open or in</p> 
+		   <p>The background. It is possible to add a firestore or sql table to hold the recordings, however this was intended as a simple free project</p>
+	  </div>
+	  
+	  <h3>December 17th, 2018</h3>
+	  <button class="accordion"> Draw a Straight Line | Android Studio, Google Play </button>
+      <div class="panel">
+	       <img src="assets/drawastraightline_preview.JPG" style="width:80%;height:80%;">
+           <p>This is my first Google Play published project, a basic drawing game to check if you are able to draw straight on your phone.</p> 
+		   <p>It is one dollar on the app store in that I wanted to setup my merchant account along with my developer account.</p> 
+		   <p>The app also has a seperate page for free doodling both of which are done in java using a canvas.</p>
+	  </div>
+	  
+	  <h3>October 9th, 2018</h3>
+	  <button class="accordion"> Obstacle Course Race Game | Unity, Blender </button>
+      <div class="panel">
+	       <video style="width:80%;height:80%;" autoplay loop muted>
+              <source src="assets/acu_obstacle_game.mp4" type="video/mp4">
+           </video>
+           <p></p> 
+		   <p>Displayed at CGDC in Portland, Oregon, Two Other People and Myself Created an obstacle/racing game where you needed to complete the track,</p> 
+		   <p>go through all the checkpoints, and avoid having all the bags in the back fly out as you rush your student to school! My Part in the project</p>
+		   <p>was creating the crates,ramps, and the golf cart which was a shorter version of the long golf cart I made for a prior project.</p>
+		   <p>This Project served as a wonderful showcase at the convention and a proof of concept for animating the golf carts in the game enviornment.</p>
+	  </div>
+	  
+	  <h3>February 15th, 2018</h3>
+	  <button class="accordion"> Vr Room 316 | Steam, Vr Hammer, Blender </button>
+      <div class="panel">
+	       <img src="assets/room316_preview.JPG" style="width:80%;height:80%;">
+           <p>Our Class Project on a VR space, I made several 3D Models for the project including the chairs, whiteboard, air vents, and lamps.</p> 
+		   <p>This was a part of a bigger project to create our college campus in VR. Most of the Business Building was complete and one Individual</p> 
+		   <p>Created the Bible Building. My main contribution was Multiple 3D Models, one of which being the Long Golf Carts on our Campus. With so many</p>
+		   <p>Faces, it was to be used for driving around the enviornment, while this Project ended up incomplete, it did see use in another project as a</p>
+		   <p>Shorter Golf Cart for an obstacle course game. These assets will be displayed under the More section of my Portfolio.</p>
+	  </div>
+   </div>
+
+   </div>
+   
+   
+   <div id="Proficiencies" class="tabcontent">
+     <div id="col1" class="card" style="float:left;width:45%;">
+	  <h1 style="background-color: #4A4A4A; padding:20px;">Programming</h1>
+	  <div style="width:95%;height:50px;background-color:#263324;float:right;"></div>
+	  <br></br><br></br>
+      <h2>Python | Flask, Pandas, Tkinter, pyodbc</h2>
+      <h3>5 years</h3>
+      <img src="assets/python_preview.JPG" style="width:100%;height:100%;">
+      <p>Python is considered my primary coding language.</p>
+	  <p>It is the easiest to structure with the least amount of syntax. Unless I need a complied application, its multiple libraries and integration with many different
+	  software makes it possible to do almost everything front end and back end related. I have created some of my biggest projects using Flask and SQL that have been a reliable contribution to the individuals and spaces
+      that I have worked with.</p>
+      
+	  <div style="width:95%;height:50px;background-color:#263324;float:right;"></div>
+	  <br></br><br></br>
+	  <h2>HTML | HTML5, CSS, Adobe Dreamweaver, Dash</h2>
+      <h3>6 years</h3>
+      <img src="assets/html_preview.JPG" style="width:100%;height:100%;">
+      <p>Everything with a Webpage uses HTML</p>
+      <p>I learned alot of HTML early from various computer classes, Adobe Products like Dreamweaver, and Javascript related projects which complements HTML and CSS. It is the easiest to pick up on and either mess with or get
+      templates to mess with from w3schools. With the use of inspect, it makes it easier to find the location of specific elements or issues in a webpage.</p> 	  
+	 
+	  <div style="width:95%;height:50px;background-color:#263324;float:right;"></div>
+	  <br></br><br></br>
+	  <h2>Javascript | Node.js, Three.js, Babylon.js, HTML</h2>
+      <h3>3 years</h3>
+      <video style="width:100%;height:100%;" autoplay loop muted>
+        <source src="assets/three_js_preview.mp4" type="video/mp4">
+      </video>
+      <p>It's better than Java.</p> 
+	  <p>In conjunction to HTML and Dash, I have been the most active in using Javascript to better enhance my projects beyond basic webpage functionality. In the past I have had projects that have caught my interest in VR
+	  spaces in the browser rather than on a headset such as Babylon.js and more recently Three.js. If it was not apparent already I really enjoy using and creating environments with Three.js. It is the perfect blend of visual
+	  and programming where the results can be seen and interacted with. You can view this best in my Checkers Board Project!</p>
+      
+	  <div style="width:95%;height:50px;background-color:#263324;float:right;"></div>
+	  <br></br><br></br>
+	  <h2>Java | Android Studio, JCreator, JDK</h2>
+      <h3>4 years</h3>
+      <img src="assets/java_preview.JPG" style="width:100%;height:100%;">
+      <p>This was my very first coding language</p> 
+	  <p>I started off with Java in high school but got the most out of Java when I started making mobile apps on Android Studio. When Publishing to the Google Play Store, creating a JDK package with a signature has been the way
+      for me to publish any additional apps on my Google Developer Account.</p>
+      
+	  <div style="width:95%;height:50px;background-color:#263324;float:right;"></div>
+	  <br></br><br></br>
+	  <h2>C# | Unity, Visual Studios, Windows Forms</h2>
+      <h3>3 months</h3>
+      <img src="assets/csharp_preview.JPG" style="width:100%;height:100%;">
+      <p>Something needs to compile my projects.</p> 
+	  <p>My earliest work in C# was basic animations and actions for objects on Unity such as shooting a projectile, creating collision, or adding movement. I now am learning C# to be able to create applications with executables
+      rather than running batch files with a cmd line in the background. I plan to do some future projects/ side hustles using Windows Forms or WPF for creating Desktop and Online executable GUIs.</p>
+      
+	  
+	 </div>
+	 
+	 <div id="col2" class="card" style="float:left;width:5%;">
+     </div>
+
+     <div id="col3" class="card" style="float:left;width:45%;">
+	  <h1 style="background-color: #4A4A4A; padding:20px;">Design</h1>
+	  <div style="width:95%;height:50px;background-color:#263324;float:right;"></div>
+	  <br></br><br></br>
+      <h2>Graphic Design | Affinity Photo, Photoshop</h2>
+      <h3>8 years</h3>
+      <img src="assets/affinity_photo_editor.JPG" style="width:100%;height:100%;">
+      <p>Affinity Photo like Photoshop can do it all!</p>
+      <p>Going into a technology related field, being able to see results was a priority which is what lead me to doing photo editing and 3d modeling first before programming. Between making adjustments to photos and creating
+	  2d/3d Textures for models or on their own, I have used Photoshop for a long time. I currently use Affinity Photo which is able to do the same things if not more.</p>
+
+	  <div style="width:95%;height:50px;background-color:#263324;float:right;"></div>
+	  <br></br><br></br>
+	  <h2>Video Editing | DaVinci Resolve, Premiere Pro, iMovie, Camtasia</h2>
+      <h3>6 years</h3>
+      <img src="assets/video_editing_preview.JPG" style="width:100%;height:100%;">
+      <p>Screen, Clipping, Export!</p>
+      <p>Creating videos is always a blast whether it is creating a new video from shot assets or making adjustments to existing projects either from camera or OBS. DaVinci Resolve is my favorite and current video editor that is
+	  similar to Premiere Pro. Along with mutliple video/audio tracks, I have been able to do audio mixing and background removal in Resolve as well for projects such as the Virtual Choir.</p>
+
+	  <div style="width:95%;height:50px;background-color:#263324;float:right;"></div>
+	  <br></br><br></br>
+	  <h2>3D Modeling | Blender</h2>
+      <h3>4 years</h3>
+      <img src="assets/blender_preview.JPG" style="width:100%;height:100%;">
+      <p>Always delete the Default Square to make a new one.</p>
+      <p>From College, I have also used Maya as well, but I prefer Blender and in many different facets is much more doable despite the shortcut learning curve. I have made many different 3D Models and for most projects was the
+	  role I took on. It has allowed for more visual options with perspective and depth to be used in my work.</p>
+
+	  <div style="width:95%;height:50px;background-color:#263324;float:right;"></div>
+	  <br></br><br></br>
+	  <h2>Vector Graphics | Affinity Designer</h2>
+      <h3>5 months</h3>
+      <img src="assets/affinity_designer_preview.JPG" style="width:100%;height:100%;">
+      <p>We Can have nice things!</p>
+      <p>While I still continue to use raster graphics (png,jpg) for the most part in my projects, I have been slowly transitioning or at least having versions of assets as vectors. Many of the assets I had were intended for
+      web design which made it difficult to use properly in print, so I had traced over the logo using Affinity Designer to create a vector version that can be good for print. I am also able to add raster elements to a
+	  vector which provides more detailing and depth without changing the svg to a png or jpg.</p>
+
+	 </div>
+    </div>
+   
+   
+   <div id="Contact" class="tabcontent">
+    <div class="card">
+	  <img class= "logo_obj" src="assets/mikedapt_logo_modern_grayscale.svg">
+      <h1 class = "contacthdr">Contact Information:</h1>
+	  <hr></hr>
+	  <h2>Professional Email: mikedaptable@gmail.com</h2>
+	  <a href="mailto:mikedaptable@gmail.com" class="fa fa-envelope"></a>
+	  <a href="https://www.linkedin.com/in/michael-wheeler-9654b4277" class="fa fa-linkedin"></a>
+      <a href="https://www.youtube.com/@Mikedaptable" class="fa fa-youtube"></a>
+	</div>
+   </div>
+   
+   <div id="More" class="tabcontent">
+    <div class="card">
+      <h2>Education</h2>
+	  <hr></hr>
+      <h5>Diploma | Plano Senior High School 2015</h5>
+      <img src="assets/planoseniorhs_preview.jpg" style="width:100%;height:80%;">
+      <p>In 2015, I graduated with one of the biggest classes that Plano Senior ever had with a GPA of 3.5 and was part of the Marching Band as a Mellophone/Marching Horn player. Aside from required courses, my interest was
+      split between computer courses and business classes going over basics on micro and macroeconomics. Overall I enjoyed Plano Senior and still have great memories on excellent marching shows, trips, and class projects.</p>
+	  <hr></hr>
+	  <h5>Bachelor of Science | Abilene Christian University 2019</h5>
+      <img src="assets/acu_preview.png" style="width:100%;height:100%;">
+      <p>From ACU I graduated with a Bachelor of Science Majoring in Digital Entertainment Technology; a blend between Art and Computer Science based on the Gaming, Film, and Animation Industries. Additionally, I have a
+	  minor in Business Administration and an unofficial minor in UX/UI from multiple courses on HCI (Human Computer Interface). Once again I was in the Big Purple Marching Band playing the Marching and Concert Horn. My
+	  most enjoyable experience in ACU was a One Month Study Abroad in Oxford where I took classes in Lessons of the Old Testament and History of Computer Science; visiting sites such as Bletchley Park, Salisbury Church, and
+      Stone Henge.</p>
+	  <hr></hr>
+    </div>
+    <div class="card">
+      <h2>Events</h2>
+	  <hr></hr>
+      <h5>CGDC Christian Game Developers Conference | July 18th, 2018</h5>
+      <img src="assets/CGDC_group_pic.jpg" style="width:100%;height:100%;">
+      <p>With a few colleagues and professor in our DET Program, we attended the Christian Game Developers Conference in Portland, Oregon. For a few days we collaborated with others in the same field, showcased the work in
+	  stead of our university, and listened to various lectures and success stories of how technology is being integrated and refined to Christian media as a whole.</p>
+    </div>
+	<div class="card">
+      <h2>Asset Showcase</h2>
+	  <hr></hr>
+      <h5>3D Models | Blender</h5>
+	  
+      <div class="container">
+       <div class="mySlides">
+        <div class="numbertext">1 / 25</div>
+        <img src="assets/corsair_model.jpg" style="width:100%;">
+        </div>
+
+       <div class="mySlides">
+        <div class="numbertext">2 / 25</div>
+         <img src="assets/anvil_model.PNG" style="width:100%;">
+        </div>
+
+       <div class="mySlides">
+        <div class="numbertext">3 / 25</div>
+         <img src="assets/bench.PNG" style="width:100%;">
+        </div>
+    
+       <div class="mySlides">
+        <div class="numbertext">4 / 25</div>
+         <img src="assets/bicycle_acu_model.PNG" style="width:100%;">
+        </div>
+
+       <div class="mySlides">
+        <div class="numbertext">5 / 25</div>
+         <img src="assets/colt45_model.PNG" style="width:100%;">
+       </div>
+    
+       <div class="mySlides">
+        <div class="numbertext">6 / 25</div>
+         <img src="assets/crate_3d.png" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">7 / 25</div>
+         <img src="assets/long_golf_cart_substance.PNG" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">8 / 25</div>
+         <img src="assets/long-golf-cart_orig.png" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">9 / 25</div>
+         <img src="assets/old-car-with-roof.png" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">10 / 25</div>
+         <img src="assets/revolver_in_unity.png" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">11 / 25</div>
+        <img src="assets/rolling_chair.PNG" style="width:100%;">
+        </div>
+
+       <div class="mySlides">
+        <div class="numbertext">12 / 25</div>
+         <img src="assets/short_golf_cart_colored.PNG" style="width:100%;">
+        </div>
+
+       <div class="mySlides">
+        <div class="numbertext">13 / 25</div>
+         <img src="assets/StreetLamp.PNG" style="width:100%;">
+        </div>
+    
+       <div class="mySlides">
+        <div class="numbertext">14 / 25</div>
+         <img src="assets/texture_bridge.PNG" style="width:100%;">
+        </div>
+
+       <div class="mySlides">
+        <div class="numbertext">15 / 25</div>
+         <img src="assets/tommy_gun_drum_mag_pic.png" style="width:100%;">
+       </div>
+    
+       <div class="mySlides">
+        <div class="numbertext">16 / 25</div>
+         <img src="assets/uzi_model.png" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">17 / 25</div>
+         <img src="assets/whiteboard.PNG" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">18 / 25</div>
+         <img src="assets/tv.PNG" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">19 / 25</div>
+         <img src="assets/wooden_office_chair.png" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">20 / 25</div>
+         <img src="assets/the_forge.png" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">21 / 25</div>
+         <img src="assets/couch.png" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">22 / 25</div>
+         <img src="assets/brown_chair.PNG" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">23 / 25</div>
+         <img src="assets/cross_model.png" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">24 / 25</div>
+         <img src="assets/office_phone.png" style="width:100%;">
+        </div>
+		
+		<div class="mySlides">
+        <div class="numbertext">25 / 25</div>
+         <img src="assets/square_table.png" style="width:100%;">
+        </div>
+    
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+	 </div>
+	 
+	 <hr></hr>
+     <h5>2D Textures | Photoshop, Substance Painter</h5>
+	 <img src="assets/brick-texture.png" style = "width:20%;">
+	 <img src="assets/concrete-texture.png" style = "width:20%;">
+	 <img src="assets/metal-texture.png" style = "width:20%;">
+	 <img src="assets/p155.png" style = "width:20%;">
+	 <img src="assets/metal-rust-texture.png" style = "width:20%;">
+	 <img src="assets/p158.png" style = "width:20%;">
+	 <img src="assets/p160.png" style = "width:20%;">
+	 <img src="assets/stone-floor-texture.png" style = "width:20%;">
+	 <img src="assets/stone-texture.jpg" style = "width:20%;">
+	 <img src="assets/water-texture.jpg" style = "width:20%;">
+	 <img src="assets/warehouse_wall.PNG" style = "width:20%;">
+	 <img src="assets/window.PNG" style = "width:20%;">
+	 <img src="assets/wood_plank.PNG" style = "width:20%;">
+	 <img src="assets/wood-texture.png" style = "width:20%;">
+	 <img src="assets/wood-texture-smooth.jpg" style = "width:20%;">
+	 <img src="assets/leather_texture.png" style = "width:20%;">
+	 
+	 <hr></hr>
+     <h5>UX/UI Layouts | Adobe XD</h5>
+	 <img src="assets/wireframe.PNG" style = "width:20%;">
+	 <img src="assets/chapel-app_orig.png" style = "width:20%;">
+	 <img src="assets/faithlife_orig.png" style = "width:20%;">
+	 <img src="assets/layout_orig.png" style = "width:20%;">
+	 <img src="assets/wildcat_banking_high_fidelity.PNG" style = "width:20%;">
+	 <img src="assets/workout-phone_orig.png" style = "width:20%;">
+	 
+	 <hr></hr>
+	 
+    </div>
+   </div>
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card" style="background-color: #4A4A4A;">
+      <h2 style = "margin-left:10px;">Digital Stewardship</h2>
+      <img class="profile" src="assets/mikdaptable_profile_pic.jpg">
+	  <div style = "background-color:rgba(0,0,0,0.3); padding:5px;">
+      <p style = "line-height: 1.8;">My work is about constructing functional and professional works of art in the digital space, from created and developed web or desktop software for the workspace to hands on side projects such as GUIs, Graphics, Video Productions, or websites.</p>
+	  <p style = "line-height: 1.8;">The tasks I have done for companies,clients,or friends are commited to a deductive understanding of their goals and an adherence to the growth of a business's personal wealth.</p>
+      </div>
+	</div>
+    <div class="card" style="background-color: #4A4A4A;">
+      <h3 style = "margin-left:10px;">Skill Hightlights</h3>
+	  <div class="photoskillbar">Photoshop/Affinity Photo 100%</div><br>
+	  <p style ="margin-top:-10px;margin-left:10px;">8 years</p>
+      <div class="htmlskillbar">HTML/CSS 100%</div><br>
+	  <p style ="margin-top:-10px;margin-left:10px;">6 years</p>
+      <div class="pythonskillbar">Python 95%</div><br>
+	  <p style ="margin-top:-10px;margin-left:10px;">5 years</p>
+      <div class="blenderskillbar">Blender 80%</div><br>
+	  <p style ="margin-top:-10px;margin-left:10px;">6 years</p>
+	  <div class="javascriptskillbar">Javascript 75%</div><br>
+	  <p style ="margin-top:-10px;margin-left:10px;">4 years</p>
+    </div>
+    <div class="card" style="background-color: #4A4A4A;">
+      <h3 style = "margin-left:10px;">Get In Touch</h3>
+	  <a href="mailto:mikedaptable@gmail.com" class="fa fa-envelope"></a>
+      <a href="https://www.linkedin.com/in/michael-wheeler-9654b4277" class="fa fa-linkedin"></a>
+      <a href="https://www.youtube.com/@Mikedaptable" class="fa fa-youtube"></a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+</div>
+
+<script>
+
+function openNav(evt, Name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
